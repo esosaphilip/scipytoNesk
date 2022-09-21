@@ -21,13 +21,7 @@ private val retrofit = Retrofit.Builder()
 
     interface CryptoAPIService{
         @GET("v1/bpi/currentprice.json")
-        suspend fun getNameData(): LiveData<String>
-
-        suspend fun getUsd(): LiveData<Int>
-
-        suspend fun getGbp():LiveData<Int>
-
-        suspend fun getEur():LiveData<Int>
+        suspend fun getNameData(): LiveData<>
 
     }
 
